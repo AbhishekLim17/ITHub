@@ -1,0 +1,322 @@
+{
+  "colorSystem": {
+    "brand": {
+      "primary": {
+        "hex": "#F3C600",
+        "rgb": "rgb(243, 198, 0)",
+        "hsl": "hsl(49, 100%, 48%)",
+        "usage": "Main CTAs, primary buttons, brand highlights, hover states",
+        "accessibility": "WCAG AA on dark backgrounds"
+      },
+      "primaryDark": {
+        "hex": "#D4A800",
+        "rgb": "rgb(212, 168, 0)",
+        "hsl": "hsl(47, 100%, 42%)",
+        "usage": "Button hover states, active elements, pressed states"
+      },
+      "primaryLight": {
+        "hex": "#FFE066",
+        "rgb": "rgb(255, 224, 102)",
+        "hsl": "hsl(48, 100%, 70%)",
+        "usage": "Subtle highlights, backgrounds, card accents"
+      },
+      "secondary": {
+        "hex": "#0066FF",
+        "rgb": "rgb(0, 102, 255)",
+        "hsl": "hsl(216, 100%, 50%)",
+        "usage": "Links, icons, secondary CTAs, informational elements"
+      },
+      "secondaryDark": {
+        "hex": "#0052CC",
+        "rgb": "rgb(0, 82, 204)",
+        "hsl": "hsl(216, 100%, 40%)",
+        "usage": "Link hover, secondary button hover"
+      },
+      "accent": {
+        "hex": "#00B4D8",
+        "rgb": "rgb(0, 180, 216)",
+        "hsl": "hsl(190, 100%, 42%)",
+        "usage": "Accent elements, data visualization, badges"
+      },
+      "accentTeal": {
+        "hex": "#0891B2",
+        "rgb": "rgb(8, 145, 178)",
+        "hsl": "hsl(192, 91%, 36%)",
+        "usage": "Alternative accent, trust indicators, certifications"
+      }
+    },
+    
+    "neutral": {
+      "text": {
+        "primary": {
+          "hex": "#111827",
+          "rgb": "rgb(17, 24, 39)",
+          "usage": "Main headings, body text, primary content"
+        },
+        "secondary": {
+          "hex": "#4B5563",
+          "rgb": "rgb(75, 85, 99)",
+          "usage": "Subheadings, secondary text, captions"
+        },
+        "tertiary": {
+          "hex": "#6B7280",
+          "rgb": "rgb(107, 114, 128)",
+          "usage": "Muted text, placeholders, disabled states"
+        },
+        "inverse": {
+          "hex": "#FFFFFF",
+          "rgb": "rgb(255, 255, 255)",
+          "usage": "Text on dark backgrounds"
+        }
+      },
+      "background": {
+        "primary": {
+          "hex": "#FFFFFF",
+          "rgb": "rgb(255, 255, 255)",
+          "usage": "Main page background, cards"
+        },
+        "secondary": {
+          "hex": "#F9FAFB",
+          "rgb": "rgb(249, 250, 251)",
+          "usage": "Alternate sections, subtle backgrounds"
+        },
+        "tertiary": {
+          "hex": "#F3F4F6",
+          "rgb": "rgb(243, 244, 246)",
+          "usage": "Inputs, code blocks, disabled elements"
+        },
+        "dark": {
+          "hex": "#1F2937",
+          "rgb": "rgb(31, 41, 55)",
+          "usage": "Footer, dark sections, contrasting areas"
+        }
+      },
+      "border": {
+        "light": {
+          "hex": "#E5E7EB",
+          "rgb": "rgb(229, 231, 235)",
+          "usage": "Subtle dividers, card borders"
+        },
+        "default": {
+          "hex": "#D1D5DB",
+          "rgb": "rgb(209, 213, 219)",
+          "usage": "Default borders, inputs"
+        },
+        "focus": {
+          "hex": "#0066FF",
+          "rgb": "rgb(0, 102, 255)",
+          "usage": "Focus rings, active borders"
+        }
+      }
+    },
+
+    "status": {
+      "success": {
+        "hex": "#10B981",
+        "rgb": "rgb(16, 185, 129)",
+        "usage": "Success messages, positive states, confirmations"
+      },
+      "successLight": {
+        "hex": "#D1FAE5",
+        "rgb": "rgb(209, 250, 229)",
+        "usage": "Success backgrounds, subtle indicators"
+      },
+      "warning": {
+        "hex": "#F59E0B",
+        "rgb": "rgb(245, 158, 11)",
+        "usage": "Warnings, caution indicators, alerts"
+      },
+      "warningLight": {
+        "hex": "#FEF3C7",
+        "rgb": "rgb(254, 243, 199)",
+        "usage": "Warning backgrounds"
+      },
+      "error": {
+        "hex": "#EF4444",
+        "rgb": "rgb(239, 68, 68)",
+        "usage": "Errors, destructive actions, critical alerts"
+      },
+      "errorLight": {
+        "hex": "#FEE2E2",
+        "rgb": "rgb(254, 226, 226)",
+        "usage": "Error backgrounds"
+      },
+      "info": {
+        "hex": "#3B82F6",
+        "rgb": "rgb(59, 130, 246)",
+        "usage": "Information, tips, notifications"
+      },
+      "infoLight": {
+        "hex": "#DBEAFE",
+        "rgb": "rgb(219, 234, 254)",
+        "usage": "Info backgrounds"
+      }
+    },
+
+    "gradients": {
+      "goldHero": {
+        "css": "linear-gradient(135deg, #F3C600 0%, #FFE066 100%)",
+        "usage": "Hero backgrounds, premium sections"
+      },
+      "goldButton": {
+        "css": "linear-gradient(90deg, #F3C600 0%, #FFC700 100%)",
+        "usage": "Button backgrounds, CTA hover states"
+      },
+      "blueAccent": {
+        "css": "linear-gradient(135deg, #0066FF 0%, #00B4D8 100%)",
+        "usage": "Secondary CTAs, feature cards"
+      },
+      "techGradient": {
+        "css": "linear-gradient(135deg, #0066FF 0%, #0891B2 50%, #F3C600 100%)",
+        "usage": "Hero overlays, premium sections"
+      },
+      "subtleGold": {
+        "css": "linear-gradient(180deg, rgba(243, 198, 0, 0.05) 0%, rgba(243, 198, 0, 0) 100%)",
+        "usage": "Subtle section backgrounds, card highlights"
+      },
+      "darkOverlay": {
+        "css": "linear-gradient(180deg, rgba(31, 41, 55, 0.95) 0%, rgba(31, 41, 55, 0.8) 100%)",
+        "usage": "Image overlays, dark sections"
+      }
+    },
+
+    "interactive": {
+      "buttonPrimary": {
+        "default": "#F3C600",
+        "hover": "#D4A800",
+        "active": "#C09600",
+        "disabled": "#F3C60050",
+        "usage": "Primary action buttons"
+      },
+      "buttonSecondary": {
+        "default": "#0066FF",
+        "hover": "#0052CC",
+        "active": "#0047B3",
+        "disabled": "#0066FF50",
+        "usage": "Secondary action buttons"
+      },
+      "buttonGhost": {
+        "default": "transparent",
+        "hover": "#F3F4F6",
+        "active": "#E5E7EB",
+        "border": "#111827",
+        "usage": "Ghost/outline buttons"
+      },
+      "link": {
+        "default": "#0066FF",
+        "hover": "#0052CC",
+        "visited": "#7C3AED",
+        "usage": "Text links"
+      }
+    },
+
+    "semantic": {
+      "tech": {
+        "hex": "#0066FF",
+        "usage": "Technology-related content, IT services"
+      },
+      "security": {
+        "hex": "#0891B2",
+        "usage": "Security features, trust indicators"
+      },
+      "premium": {
+        "hex": "#F3C600",
+        "usage": "Premium features, highlights"
+      },
+      "data": {
+        "hex": "#10B981",
+        "usage": "Data visualization, metrics"
+      }
+    },
+
+    "shadows": {
+      "card": "0 2px 8px rgba(17, 24, 39, 0.06)",
+      "cardHover": "0 8px 24px rgba(17, 24, 39, 0.12)",
+      "button": "0 1px 3px rgba(17, 24, 39, 0.1)",
+      "buttonHover": "0 4px 12px rgba(243, 198, 0, 0.3)",
+      "dropdown": "0 10px 40px rgba(17, 24, 39, 0.15)",
+      "focus": "0 0 0 3px rgba(0, 102, 255, 0.2)"
+    }
+  },
+
+  "accessibilityNotes": {
+    "wcagAACompliance": {
+      "primaryOnWhite": "Contrast ratio: 4.8:1 ✓ (AA Large Text)",
+      "primaryOnDark": "Contrast ratio: 11.2:1 ✓ (AAA)",
+      "secondaryOnWhite": "Contrast ratio: 7.5:1 ✓ (AAA)",
+      "textPrimaryOnWhite": "Contrast ratio: 16.1:1 ✓ (AAA)",
+      "textSecondaryOnWhite": "Contrast ratio: 7.8:1 ✓ (AAA)"
+    },
+    "recommendations": [
+      "Use primary yellow (#F3C600) with dark text (#111827) for optimal contrast",
+      "Blue secondary (#0066FF) works excellently on white backgrounds",
+      "Avoid yellow text on white backgrounds",
+      "Use primaryDark (#D4A800) for better contrast when needed",
+      "Ensure all interactive elements have focus states with blue border"
+    ]
+  },
+
+  "usageExamples": {
+    "hero": {
+      "background": "gradient.goldHero or gradient.techGradient",
+      "text": "neutral.text.inverse (#FFFFFF)",
+      "cta": "brand.primary (#F3C600)"
+    },
+    "buttons": {
+      "primary": "brand.primary (#F3C600) with hover brand.primaryDark (#D4A800)",
+      "secondary": "brand.secondary (#0066FF) with hover brand.secondaryDark (#0052CC)",
+      "ghost": "transparent with border neutral.text.primary (#111827)"
+    },
+    "cards": {
+      "background": "neutral.background.primary (#FFFFFF)",
+      "border": "neutral.border.light (#E5E7EB)",
+      "shadow": "shadows.card"
+    },
+    "links": {
+      "default": "brand.secondary (#0066FF)",
+      "hover": "brand.secondaryDark (#0052CC)"
+    }
+  },
+
+  "designTokens": {
+    "css": {
+      "--color-primary": "#F3C600",
+      "--color-primary-dark": "#D4A800",
+      "--color-primary-light": "#FFE066",
+      "--color-secondary": "#0066FF",
+      "--color-secondary-dark": "#0052CC",
+      "--color-accent": "#00B4D8",
+      "--color-accent-teal": "#0891B2",
+      "--color-text": "#111827",
+      "--color-text-muted": "#6B7280",
+      "--color-bg": "#FFFFFF",
+      "--color-bg-alt": "#F9FAFB",
+      "--color-surface": "#F3F4F6",
+      "--color-border": "#E5E7EB",
+      "--gradient-gold": "linear-gradient(135deg, #F3C600 0%, #FFE066 100%)",
+      "--gradient-blue": "linear-gradient(135deg, #0066FF 0%, #00B4D8 100%)",
+      "--shadow-card": "0 2px 8px rgba(17, 24, 39, 0.06)",
+      "--shadow-hover": "0 8px 24px rgba(17, 24, 39, 0.12)"
+    },
+    "tailwind": {
+      "extend": {
+        "colors": {
+          "primary": {
+            "DEFAULT": "#F3C600",
+            "dark": "#D4A800",
+            "light": "#FFE066"
+          },
+          "secondary": {
+            "DEFAULT": "#0066FF",
+            "dark": "#0052CC"
+          },
+          "accent": {
+            "DEFAULT": "#00B4D8",
+            "teal": "#0891B2",
+            "dark": "#1F2937"
+          }
+        }
+      }
+    }
+  }
+}

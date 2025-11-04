@@ -1,0 +1,203 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Primary Brand (Gold) - Hero Color */
+  --color-primary: #F3C600;
+  --color-primary-dark: #D4A800;
+  --color-primary-light: #FFF9E6;
+  
+  /* Secondary (Blue) - Trust & Technology */
+  --color-secondary: #0066FF;
+  --color-secondary-dark: #0052CC;
+  --color-secondary-light: #E6F0FF;
+  
+  /* Accent (Cyan) - Innovation */
+  --color-accent: #00B4D8;
+  --color-accent-dark: #0891B2;
+  --color-accent-light: #E6F9FC;
+  
+  /* Neutral Backgrounds - Professional Hierarchy */
+  --color-bg-white: #FFFFFF;
+  --color-bg-light: #F9FAFB;
+  --color-bg-surface: #F3F4F6;
+  
+  /* Text Hierarchy - Clear Contrast */
+  --color-text-primary: #111827;
+  --color-text-body: #374151;
+  --color-text-muted: #6B7280;
+  --color-text-placeholder: #9CA3AF;
+  
+  /* Borders & Dividers */
+  --color-border-strong: #E5E7EB;
+  --color-border-light: #F3F4F6;
+  
+  /* Dark Theme (Header/Footer) */
+  --color-dark-primary: #0F172A;
+  --color-dark-secondary: #1E293B;
+  --color-dark-accent: #334155;
+  --color-text-on-dark: #F1F5F9;
+  --color-text-muted-on-dark: #CBD5E1;
+  
+  /* Status Colors */
+  --color-success: #10B981;
+  --color-warning: #F59E0B;
+  --color-error: #EF4444;
+  --color-info: #3B82F6;
+  
+  /* Professional Gradients */
+  --gradient-gold: linear-gradient(135deg, #F3C600 0%, #D4A800 100%);
+  --gradient-blue: linear-gradient(135deg, #0066FF 0%, #00B4D8 100%);
+  --gradient-hero: linear-gradient(135deg, #0F172A 0%, #1E293B 50%, #334155 100%);
+  --gradient-tech: linear-gradient(135deg, #0066FF 0%, #00B4D8 100%);
+  
+  /* Professional Shadows */
+  --shadow-card: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+  --shadow-hover: 0 10px 15px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.05);
+  --shadow-button: 0 4px 6px rgba(243, 198, 0, 0.3);
+  --shadow-button-hover: 0 6px 12px rgba(243, 198, 0, 0.4);
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+@layer base {
+  body {
+    @apply antialiased text-neutral-900 bg-white;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+  
+  /* Focus visible for accessibility */
+  *:focus-visible {
+    @apply outline-none ring-2 ring-secondary ring-offset-2 rounded;
+  }
+}
+
+@layer components {
+  /* Container */
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  /* Buttons */
+  .btn-primary {
+    @apply bg-primary hover:bg-primary-dark text-neutral-900 font-semibold px-6 py-3 rounded-xl shadow-button transition-all duration-300 hover:scale-105 hover:shadow-button-hover focus:ring-2 focus:ring-primary focus:ring-offset-2;
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary hover:bg-secondary-dark text-white font-semibold px-6 py-3 rounded-xl shadow-button transition-all duration-300 hover:scale-105 focus:ring-2 focus:ring-secondary focus:ring-offset-2;
+  }
+  
+  .btn-ghost {
+    @apply border-2 border-neutral-900 hover:bg-neutral-900 hover:text-white font-semibold px-6 py-3 rounded-xl transition-all duration-300 focus:ring-2 focus:ring-neutral-900 focus:ring-offset-2;
+  }
+  
+  .btn-outline {
+    @apply border-2 border-primary text-primary hover:bg-primary hover:text-neutral-900 font-semibold px-6 py-3 rounded-xl transition-all duration-300;
+  }
+  
+  /* Cards */
+  .card {
+    @apply bg-white rounded-2xl shadow-card hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1;
+  }
+  
+  .card-flat {
+    @apply bg-white rounded-2xl border border-neutral-200 transition-all duration-300;
+  }
+  
+  /* Links */
+  .link-primary {
+    @apply text-secondary hover:text-secondary-dark underline-offset-4 hover:underline transition-colors;
+  }
+  
+  /* Badges */
+  .badge {
+    @apply inline-flex items-center px-3 py-1 rounded-full text-sm font-medium;
+  }
+  
+  .badge-primary {
+    @apply bg-primary-light text-neutral-900;
+  }
+  
+  .badge-secondary {
+    @apply bg-secondary-light text-secondary-dark;
+  }
+  
+  .badge-success {
+    @apply bg-success-light text-success-dark;
+  }
+  
+  /* Inputs */
+  .input {
+    @apply w-full px-4 py-3 rounded-xl border border-neutral-300 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none transition-colors;
+  }
+  
+  /* Gradients */
+  .gradient-gold {
+    background: linear-gradient(135deg, #F3C600 0%, #FFE066 100%);
+  }
+  
+  .gradient-blue {
+    background: linear-gradient(135deg, #0066FF 0%, #00B4D8 100%);
+  }
+  
+  .gradient-tech {
+    background: linear-gradient(135deg, #0066FF 0%, #0891B2 50%, #F3C600 100%);
+  }
+  
+  /* Text gradients */
+  .text-gradient-gold {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary-light;
+  }
+  
+  .text-gradient-blue {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-secondary to-accent;
+  }
+}
+
+@layer utilities {
+  /* Animations */
+  .animate-fadeIn {
+    animation: fadeIn 0.5s ease-in;
+  }
+  
+  .animate-slideUp {
+    animation: slideUp 0.5s ease-out;
+  }
+  
+  /* Hover states */
+  .hover-lift {
+    @apply transition-transform duration-300 hover:-translate-y-1;
+  }
+  
+  .hover-scale {
+    @apply transition-transform duration-300 hover:scale-105;
+  }
+  
+  /* Glass morphism */
+  .glass {
+    @apply bg-white/80 backdrop-blur-lg border border-white/20;
+  }
+  
+  /* Scrollbar styling */
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .scrollbar-thin::-webkit-scrollbar-track {
+    @apply bg-neutral-100;
+  }
+  
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    @apply bg-neutral-400 rounded-full;
+  }
+  
+  .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+    @apply bg-neutral-500;
+  }
+}
