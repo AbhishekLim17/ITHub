@@ -76,8 +76,9 @@ export default function TrustSection() {
                 </div>
 
                 {/* Quote */}
+                {/* eslint-disable-next-line react/no-unescaped-entities */}
                 <p className="text-[#374151] text-lg italic leading-relaxed mb-6 mt-6">
-                  {`"${testimonial.quote}"`}
+                  "{testimonial.quote}"
                 </p>
 
                 {/* Author */}
