@@ -77,7 +77,7 @@ export default function TrustSection() {
 
                 {/* Quote */}
                 <p className="text-[#374151] text-lg italic leading-relaxed mb-6 mt-6">
-                  "{testimonial.quote}"
+                  &ldquo;{testimonial.quote}&rdquo;
                 </p>
 
                 {/* Author */}
