@@ -81,10 +81,10 @@ const services: Service[] = [
 
 export default function ServicesGrid() {
   return (
-    <section id="services" className="py-24 bg-gradient-to-b from-white to-blue-50">
+    <section id="services" className="py-24 bg-gradient-to-b from-slate-50 to-blue-50">
       <div className="container-custom">
         <div className="text-center mb-16 space-y-4">
-          <span className="inline-block px-4 py-2 bg-blue-100 text-[#0066FF] text-sm font-semibold rounded-full">
+          <span className="inline-block px-4 py-2 bg-blue-100 text-blue-700 text-sm font-semibold rounded-full">
             Unsere Leistungen
           </span>
           <h2 className="text-4xl lg:text-5xl font-heading font-bold text-[#111827]">
@@ -99,15 +99,15 @@ export default function ServicesGrid() {
           {services.map((service, index) => (
             <article
               key={index}
-              className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border-2 border-transparent hover:border-[#0066FF]/20 group relative overflow-hidden"
+              className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border-2 border-transparent hover:border-blue-500/20 group relative overflow-hidden"
               role="article"
               aria-label={`Service: ${service.title}`}
             >
               {/* Gradient Overlay on Hover */}
-              <div className="absolute inset-0 bg-gradient-to-br from-[#0066FF]/0 to-[#00B4D8]/0 group-hover:from-[#0066FF]/5 group-hover:to-[#00B4D8]/5 transition-all duration-500 rounded-3xl"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-500/0 to-purple-500/0 group-hover:from-blue-500/5 group-hover:to-purple-500/5 transition-all duration-500 rounded-3xl"></div>
               
               <div className="relative z-10">
-                <div className="w-16 h-16 bg-gradient-to-br from-[#0066FF] to-[#00B4D8] rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:rotate-3 transition-all duration-500 shadow-lg">
+                <div className="w-16 h-16 bg-gradient-to-br from-blue-600 to-purple-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:rotate-3 transition-all duration-500 shadow-lg">
                   <div className="text-white">
                     {service.icon}
                   </div>
@@ -121,8 +121,8 @@ export default function ServicesGrid() {
               <ul className="space-y-3 mb-6">
                 {service.features.map((feature, idx) => (
                   <li key={idx} className="flex items-start space-x-3 text-sm text-[#374151]">
-                    <div className="w-5 h-5 rounded-full bg-gradient-to-br from-[#0066FF]/20 to-[#00B4D8]/20 flex items-center justify-center flex-shrink-0 mt-0.5">
-                      <CheckCircle2 size={14} className="text-[#0066FF]" />
+                    <div className="w-5 h-5 rounded-full bg-gradient-to-br from-blue-100 to-purple-100 flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <CheckCircle2 size={14} className="text-blue-600" />
                     </div>
                     <span>{feature}</span>
                   </li>
@@ -130,7 +130,7 @@ export default function ServicesGrid() {
               </ul>
               <a
                 href={`/services/${service.slug}`}
-                className="inline-flex items-center space-x-2 text-[#0066FF] hover:text-[#00B4D8] font-semibold transition-colors group/link"
+                className="inline-flex items-center space-x-2 text-blue-600 hover:text-purple-600 font-semibold transition-colors group/link"
               >
                 <span>Mehr erfahren</span>
                 <ArrowRight size={16} className="group-hover/link:translate-x-1 transition-transform" />

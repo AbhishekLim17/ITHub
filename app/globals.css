@@ -3,20 +3,20 @@
 @tailwind utilities;
 
 :root {
-  /* Primary Brand (Gold) - Hero Color */
-  --color-primary: #F3C600;
-  --color-primary-dark: #D4A800;
-  --color-primary-light: #FFF9E6;
+  /* Primary Brand (Blue) - Hero Color */
+  --color-primary: #2563EB;
+  --color-primary-dark: #1D4ED8;
+  --color-primary-light: #DBEAFE;
   
-  /* Secondary (Blue) - Trust & Technology */
-  --color-secondary: #0066FF;
-  --color-secondary-dark: #0052CC;
-  --color-secondary-light: #E6F0FF;
+  /* Secondary (Purple) - Trust & Technology */
+  --color-secondary: #9333EA;
+  --color-secondary-dark: #7E22CE;
+  --color-secondary-light: #F3E8FF;
   
   /* Accent (Cyan) - Innovation */
-  --color-accent: #00B4D8;
+  --color-accent: #06B6D4;
   --color-accent-dark: #0891B2;
-  --color-accent-light: #E6F9FC;
+  --color-accent-light: #CFFAFE;
   
   /* Neutral Backgrounds - Professional Hierarchy */
   --color-bg-white: #FFFFFF;
@@ -47,8 +47,8 @@
   --color-info: #3B82F6;
   
   /* Professional Gradients */
-  --gradient-gold: linear-gradient(135deg, #F3C600 0%, #D4A800 100%);
-  --gradient-blue: linear-gradient(135deg, #0066FF 0%, #00B4D8 100%);
+  --gradient-gold: linear-gradient(135deg, #2563EB 0%, #9333EA 100%);
+  --gradient-blue: linear-gradient(135deg, #2563EB 0%, #06B6D4 100%);
   --gradient-hero: linear-gradient(135deg, #0F172A 0%, #1E293B 50%, #334155 100%);
   --gradient-tech: linear-gradient(135deg, #0066FF 0%, #00B4D8 100%);
   

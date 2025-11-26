@@ -2,12 +2,12 @@
 
 export default function ColorShowcase() {
   const brandColors = [
-    { name: 'Primary Gold', hex: '#F3C600', text: 'text-neutral-900', desc: 'Main CTAs, highlights' },
-    { name: 'Primary Dark', hex: '#D4A800', text: 'text-neutral-900', desc: 'Hover states' },
-    { name: 'Primary Light', hex: '#FFE066', text: 'text-neutral-900', desc: 'Backgrounds' },
-    { name: 'Secondary Blue', hex: '#0066FF', text: 'text-white', desc: 'Links, icons' },
-    { name: 'Secondary Dark', hex: '#0052CC', text: 'text-white', desc: 'Link hover' },
-    { name: 'Accent Cyan', hex: '#00B4D8', text: 'text-white', desc: 'Accents' },
+    { name: 'Primary Blue', hex: '#2563EB', text: 'text-white', desc: 'Main CTAs, highlights' },
+    { name: 'Primary Dark', hex: '#1D4ED8', text: 'text-white', desc: 'Hover states' },
+    { name: 'Primary Light', hex: '#DBEAFE', text: 'text-neutral-900', desc: 'Backgrounds' },
+    { name: 'Secondary Purple', hex: '#9333EA', text: 'text-white', desc: 'Gradients, accents' },
+    { name: 'Secondary Dark', hex: '#7E22CE', text: 'text-white', desc: 'Hover states' },
+    { name: 'Accent Cyan', hex: '#06B6D4', text: 'text-white', desc: 'Accents, CTAs' },
     { name: 'Accent Teal', hex: '#0891B2', text: 'text-white', desc: 'Trust indicators' },
   ];
 
@@ -32,7 +32,7 @@ export default function ColorShowcase() {
       <div className="container-custom">
         <div className="text-center mb-16">
           <h2 className="text-h2 font-heading text-neutral-900 mb-4">
-            Color System <span className="text-gradient-gold">Showcase</span>
+            Color System <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Showcase</span>
           </h2>
           <p className="text-xl text-neutral-600">
             Vibrant, professional, and WCAG AA compliant
@@ -64,14 +64,14 @@ export default function ColorShowcase() {
         <div className="mb-16">
           <h3 className="text-h3 font-heading text-neutral-900 mb-6">Gradients</h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div className="rounded-2xl h-48 gradient-gold flex items-center justify-center text-neutral-900 font-bold text-xl shadow-card">
-              Gold Hero
+            <div className="rounded-2xl h-48 bg-gradient-to-r from-blue-600 to-purple-600 flex items-center justify-center text-white font-bold text-xl shadow-card">
+              Blue-Purple Hero
             </div>
-            <div className="rounded-2xl h-48 gradient-blue flex items-center justify-center text-white font-bold text-xl shadow-card">
-              Blue Accent
+            <div className="rounded-2xl h-48 bg-gradient-to-r from-blue-600 to-cyan-600 flex items-center justify-center text-white font-bold text-xl shadow-card">
+              Blue-Cyan Accent
             </div>
-            <div className="rounded-2xl h-48 gradient-tech flex items-center justify-center text-white font-bold text-xl shadow-card">
-              Tech Gradient
+            <div className="rounded-2xl h-48 bg-gradient-to-r from-purple-600 to-cyan-600 flex items-center justify-center text-white font-bold text-xl shadow-card">
+              Purple-Cyan Tech
             </div>
           </div>
         </div>
@@ -88,7 +88,7 @@ export default function ColorShowcase() {
           </div>
           
           <div className="mt-8 space-y-4">
-            <a href="#" className="link-primary block">This is a primary link (blue)</a>
+            <a href="#" className="text-blue-600 hover:text-purple-600 font-semibold block transition-colors">This is a primary link (blue → purple)</a>
             <div className="flex gap-3">
               <span className="badge badge-primary">Premium</span>
               <span className="badge badge-secondary">New</span>
@@ -146,11 +146,11 @@ export default function ColorShowcase() {
             <p className="text-neutral-600">
               Secondary text in lighter gray (#6B7280) - Ideal for captions and muted content
             </p>
-            <p className="text-gradient-gold text-2xl font-bold">
-              Gradient Text Effect - Gold
+            <p className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent text-2xl font-bold">
+              Gradient Text Effect - Blue to Purple
             </p>
-            <p className="text-gradient-blue text-2xl font-bold">
-              Gradient Text Effect - Blue
+            <p className="bg-gradient-to-r from-purple-600 to-cyan-600 bg-clip-text text-transparent text-2xl font-bold">
+              Gradient Text Effect - Purple to Cyan
             </p>
           </div>
         </div>

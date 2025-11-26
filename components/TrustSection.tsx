@@ -29,15 +29,15 @@ const testimonials = [
 
 export default function TrustSection() {
   return (
-    <section className="py-24 bg-gradient-to-br from-teal-50 via-cyan-50 to-sky-50 relative overflow-hidden">
+    <section className="py-24 bg-gradient-to-br from-cyan-50 via-blue-50 to-purple-50 relative overflow-hidden">
       {/* Background Decoration */}
-      <div className="absolute top-0 left-0 w-96 h-96 bg-gradient-to-br from-teal-200/30 to-cyan-200/30 rounded-full blur-3xl animate-pulse"></div>
-      <div className="absolute bottom-0 right-0 w-96 h-96 bg-gradient-to-tl from-sky-200/30 to-cyan-200/30 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+      <div className="absolute top-0 left-0 w-96 h-96 bg-gradient-to-br from-cyan-200/30 to-blue-200/30 rounded-full blur-3xl animate-pulse"></div>
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-gradient-to-tl from-purple-200/30 to-blue-200/30 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
       
       <div className="container-custom relative z-10">
         {/* Partner Logos */}
         <div className="mb-20">
-          <span className="inline-block px-4 py-2 bg-teal-100 text-teal-600 text-sm font-semibold rounded-full mb-4 mx-auto block w-fit">
+          <span className="inline-block px-4 py-2 bg-cyan-100 text-cyan-700 text-sm font-semibold rounded-full mb-4 mx-auto block w-fit">
             🤝 Vertrauen & Partnerschaften
           </span>
           <p className="text-center text-[#6B7280] text-lg mb-12 font-medium">
@@ -47,7 +47,7 @@ export default function TrustSection() {
             {logos.map((logo, index) => (
               <div
                 key={index}
-                className="text-2xl lg:text-3xl font-bold bg-gradient-to-r from-teal-600 to-cyan-600 bg-clip-text text-transparent hover:scale-110 transition-transform duration-300"
+                className="text-2xl lg:text-3xl font-bold bg-gradient-to-r from-cyan-600 to-blue-600 bg-clip-text text-transparent hover:scale-110 transition-transform duration-300"
               >
                 {logo.text}
               </div>
@@ -58,7 +58,7 @@ export default function TrustSection() {
         {/* Testimonials */}
         <div className="mt-20">
           <h2 className="text-4xl lg:text-5xl font-heading font-bold text-[#111827] text-center mb-4">
-            Was unsere <span className="bg-gradient-to-r from-teal-600 to-cyan-600 bg-clip-text text-transparent">Kunden sagen</span>
+            Was unsere <span className="bg-gradient-to-r from-cyan-600 to-blue-600 bg-clip-text text-transparent">Kunden sagen</span>
           </h2>
           <p className="text-center text-[#6B7280] text-lg mb-12 max-w-2xl mx-auto">
             Überzeugen Sie sich von den Erfahrungen unserer zufriedenen Kunden
@@ -68,10 +68,10 @@ export default function TrustSection() {
             {testimonials.map((testimonial, index) => (
               <div
                 key={index}
-                className="bg-white/80 backdrop-blur-sm rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 relative border border-teal-100"
+                className="bg-white/80 backdrop-blur-sm rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 relative border border-cyan-100"
               >
                 {/* Quote Icon */}
-                <div className="absolute -top-6 -left-6 w-16 h-16 bg-gradient-to-br from-teal-500 to-cyan-500 rounded-2xl flex items-center justify-center shadow-lg hover:rotate-12 transition-transform duration-300">
+                <div className="absolute -top-6 -left-6 w-16 h-16 bg-gradient-to-br from-cyan-600 to-blue-600 rounded-2xl flex items-center justify-center shadow-lg hover:rotate-12 transition-transform duration-300">
                   <Quote className="w-8 h-8 text-white" />
                 </div>
 

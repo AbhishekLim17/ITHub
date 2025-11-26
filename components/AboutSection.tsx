@@ -10,21 +10,21 @@ export default function AboutSection() {
   ];
 
   return (
-    <section id="about" className="py-24 bg-gradient-to-br from-orange-50 via-amber-50 to-yellow-50 relative overflow-hidden">
+    <section id="about" className="py-24 bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50 relative overflow-hidden">
       {/* Background Decoration */}
-      <div className="absolute top-0 left-0 w-96 h-96 bg-gradient-to-br from-orange-200/30 to-amber-200/30 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-0 right-0 w-96 h-96 bg-gradient-to-tl from-yellow-200/30 to-orange-200/30 rounded-full blur-3xl"></div>
+      <div className="absolute top-0 left-0 w-96 h-96 bg-gradient-to-br from-emerald-200/30 to-teal-200/30 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-gradient-to-tl from-cyan-200/30 to-emerald-200/30 rounded-full blur-3xl"></div>
       
       <div className="container-custom relative z-10">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left: Founder & Info */}
           <div className="space-y-8">
             <div>
-              <span className="inline-block px-4 py-2 bg-orange-100 text-orange-600 text-sm font-semibold rounded-full mb-4">
+              <span className="inline-block px-4 py-2 bg-emerald-100 text-emerald-700 text-sm font-semibold rounded-full mb-4">
                 Über uns
               </span>
               <h2 className="text-4xl lg:text-5xl font-heading font-bold text-[#111827] mb-4">
-                Ihr Partner für <span className="bg-gradient-to-r from-orange-600 to-amber-600 bg-clip-text text-transparent">digitale Excellence</span>
+                Ihr Partner für <span className="bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">digitale Excellence</span>
               </h2>
               <p className="text-xl text-[#6B7280] leading-relaxed mb-6">
                 Ihr verlässlicher Partner für professionelle IT-Dienstleistungen seit über 20 Jahren.

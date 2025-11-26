@@ -8,18 +8,18 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-[#0F172A] text-[#F1F5F9] pt-16 pb-8 border-t border-[#1E293B]">
+    <footer className="bg-slate-900 text-slate-100 pt-16 pb-8 border-t border-slate-800">
       <div className="container-custom">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-gradient-to-br from-[#F3C600] to-[#D4A800] rounded-lg flex items-center justify-center font-bold text-[#111827] shadow-md">
+              <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg flex items-center justify-center font-bold text-white shadow-md">
                 IT
               </div>
               <span className="font-heading font-bold text-xl">ITHub</span>
             </div>
-            <p className="text-[#CBD5E1] leading-relaxed">
+            <p className="text-slate-300 leading-relaxed">
               Ihr strategischer IT-Partner seit 2003. Zuverlässig, kompetent und kundenorientiert.
             </p>
             <div className="flex space-x-4">
@@ -27,7 +27,7 @@ export default function Footer() {
                 href="https://linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 bg-[#1E293B] hover:bg-[#F3C600] hover:text-[#111827] rounded-lg flex items-center justify-center transition-all"
+                className="w-10 h-10 bg-slate-800 hover:bg-gradient-to-r hover:from-blue-600 hover:to-cyan-600 rounded-lg flex items-center justify-center transition-all duration-300"
                 aria-label="LinkedIn"
               >
                 <Linkedin size={20} />
@@ -36,7 +36,7 @@ export default function Footer() {
                 href="https://twitter.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 bg-[#1E293B] hover:bg-[#F3C600] hover:text-[#111827] rounded-lg flex items-center justify-center transition-all"
+                className="w-10 h-10 bg-slate-800 hover:bg-gradient-to-r hover:from-blue-600 hover:to-cyan-600 rounded-lg flex items-center justify-center transition-all duration-300"
                 aria-label="Twitter"
               >
                 <Twitter size={20} />

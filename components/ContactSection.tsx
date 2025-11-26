@@ -31,18 +31,18 @@ export default function ContactSection() {
   };
 
   return (
-    <section id="contact" className="py-24 bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50 relative overflow-hidden">
+    <section id="contact" className="py-24 bg-gradient-to-br from-blue-50 via-purple-50 to-violet-50 relative overflow-hidden">
       {/* Background Decoration */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-indigo-200/30 to-purple-200/30 rounded-full blur-3xl animate-pulse"></div>
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-tl from-pink-200/30 to-violet-200/30 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+      <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-blue-200/30 to-purple-200/30 rounded-full blur-3xl animate-pulse"></div>
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-tl from-violet-200/30 to-cyan-200/30 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
       
       <div className="container-custom relative z-10">
         <div className="text-center mb-16">
-          <span className="inline-block px-4 py-2 bg-indigo-100 text-indigo-600 text-sm font-semibold rounded-full mb-4">
+          <span className="inline-block px-4 py-2 bg-blue-100 text-blue-700 text-sm font-semibold rounded-full mb-4">
             💬 Kontakt
           </span>
           <h2 className="text-4xl lg:text-5xl font-heading font-bold text-[#111827] mb-4">
-            Kontaktieren Sie <span className="bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">uns</span>
+            Kontaktieren Sie <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">uns</span>
           </h2>
           <p className="text-xl text-[#6B7280] leading-relaxed max-w-2xl mx-auto">
             Lassen Sie uns gemeinsam die perfekte IT-Lösung für Ihr Unternehmen entwickeln.
@@ -56,9 +56,9 @@ export default function ContactSection() {
             <div className="space-y-6">
               <a
                 href="tel:+49731123456"
-                className="flex items-start space-x-4 p-6 rounded-2xl bg-white/80 backdrop-blur-sm border border-indigo-100 hover:border-indigo-300 hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-xl group"
+                className="flex items-start space-x-4 p-6 rounded-2xl bg-white/80 backdrop-blur-sm border border-blue-100 hover:border-blue-300 hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-xl group"
               >
-                <div className="w-14 h-14 bg-gradient-to-br from-indigo-500 to-purple-500 rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300">
+                <div className="w-14 h-14 bg-gradient-to-br from-blue-600 to-purple-600 rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300">
                   <Phone className="w-7 h-7 text-white" />
                 </div>
                 <div>
@@ -71,7 +71,7 @@ export default function ContactSection() {
                 href="mailto:info@ithub.de"
                 className="flex items-start space-x-4 p-6 rounded-2xl bg-white/80 backdrop-blur-sm border border-purple-100 hover:border-purple-300 hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-xl group"
               >
-                <div className="w-14 h-14 bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300">
+                <div className="w-14 h-14 bg-gradient-to-br from-purple-600 to-cyan-600 rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300">
                   <Mail className="w-7 h-7 text-white" />
                 </div>
                 <div>
@@ -80,8 +80,8 @@ export default function ContactSection() {
                 </div>
               </a>
 
-              <div className="flex items-start space-x-4 p-6 rounded-2xl bg-white/80 backdrop-blur-sm border border-pink-100 shadow-lg">
-                <div className="w-14 h-14 bg-gradient-to-br from-pink-500 to-rose-500 rounded-2xl flex items-center justify-center flex-shrink-0">
+              <div className="flex items-start space-x-4 p-6 rounded-2xl bg-white/80 backdrop-blur-sm border border-cyan-100 shadow-lg">
+                <div className="w-14 h-14 bg-gradient-to-br from-cyan-600 to-emerald-600 rounded-2xl flex items-center justify-center flex-shrink-0">
                   <MapPin className="w-7 h-7 text-white" />
                 </div>
                 <div>
@@ -90,8 +90,8 @@ export default function ContactSection() {
                 </div>
               </div>
 
-              <div className="flex items-start space-x-4 p-6 rounded-2xl bg-white/80 backdrop-blur-sm border border-violet-100 shadow-lg">
-                <div className="w-14 h-14 bg-gradient-to-br from-violet-500 to-indigo-500 rounded-2xl flex items-center justify-center flex-shrink-0">
+              <div className="flex items-start space-x-4 p-6 rounded-2xl bg-white/80 backdrop-blur-sm border border-emerald-100 shadow-lg">
+                <div className="w-14 h-14 bg-gradient-to-br from-emerald-600 to-teal-600 rounded-2xl flex items-center justify-center flex-shrink-0">
                   <Clock className="w-7 h-7 text-white" />
                 </div>
                 <div>
@@ -137,7 +137,7 @@ export default function ContactSection() {
                       required
                       value={formData.name}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-indigo-500 focus:ring-4 focus:ring-indigo-100 outline-none transition-all bg-white/80 backdrop-blur-sm"
+                      className="w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-blue-500 focus:ring-4 focus:ring-blue-100 outline-none transition-all bg-white/80 backdrop-blur-sm"
                       placeholder="Max Mustermann"
                     />
                   </div>
@@ -152,7 +152,7 @@ export default function ContactSection() {
                       name="company"
                       value={formData.company}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-indigo-500 focus:ring-4 focus:ring-indigo-100 outline-none transition-all bg-white/80 backdrop-blur-sm"
+                      className="w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-blue-500 focus:ring-4 focus:ring-blue-100 outline-none transition-all bg-white/80 backdrop-blur-sm"
                       placeholder="Firma GmbH"
                     />
                   </div>
@@ -200,7 +200,7 @@ export default function ContactSection() {
                     name="interest"
                     value={formData.interest}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-pink-500 focus:ring-4 focus:ring-pink-100 outline-none transition-all bg-white/80 backdrop-blur-sm"
+                    className="w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-cyan-500 focus:ring-4 focus:ring-cyan-100 outline-none transition-all bg-white/80 backdrop-blur-sm"
                   >
                     <option value="">Bitte wählen...</option>
                     <option value="netzwerke">Netzwerke</option>
@@ -223,7 +223,7 @@ export default function ContactSection() {
                     rows={5}
                     value={formData.message}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-indigo-500 focus:ring-4 focus:ring-indigo-100 outline-none transition-all bg-white/80 backdrop-blur-sm resize-none"
+                    className="w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-blue-500 focus:ring-4 focus:ring-blue-100 outline-none transition-all bg-white/80 backdrop-blur-sm resize-none"
                     placeholder="Beschreiben Sie Ihr Anliegen..."
                   />
                 </div>
@@ -231,7 +231,7 @@ export default function ContactSection() {
                 <button
                   type="submit"
                   disabled={status === 'submitting'}
-                  className="w-full py-4 px-8 bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-semibold rounded-xl hover:from-indigo-700 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center space-x-2"
+                  className="w-full py-4 px-8 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-xl hover:from-blue-700 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center space-x-2"
                 >
                   <span>{status === 'submitting' ? 'Wird gesendet...' : 'Nachricht senden'}</span>
                   <Send size={20} />

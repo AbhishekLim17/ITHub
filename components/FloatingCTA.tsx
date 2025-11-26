@@ -23,7 +23,7 @@ export default function FloatingCTA() {
       {isExpanded ? (
         <div className="bg-white rounded-2xl shadow-2xl p-6 w-80 animate-fadeIn">
           <div className="flex items-center justify-between mb-4">
-            <h3 className="font-heading font-semibold text-lg text-accent-dark">
+            <h3 className="font-heading font-semibold text-lg text-blue-600">
               Brauchen Sie Hilfe?
             </h3>
             <button
@@ -58,10 +58,10 @@ export default function FloatingCTA() {
       ) : (
         <button
           onClick={() => setIsExpanded(true)}
-          className="w-16 h-16 bg-primary hover:bg-primary-dark rounded-full shadow-2xl flex items-center justify-center transition-all hover:scale-110"
+          className="w-16 h-16 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 rounded-full shadow-2xl flex items-center justify-center transition-all hover:scale-110"
           aria-label="Get in touch"
         >
-          <MessageCircle className="w-7 h-7 text-accent-dark" />
+          <MessageCircle className="w-7 h-7 text-white" />
         </button>
       )}
     </div>

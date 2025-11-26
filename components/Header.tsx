@@ -36,7 +36,7 @@ export default function Header() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2 group">
-            <div className="w-10 h-10 bg-gradient-to-br from-[#0066FF] to-[#00B4D8] rounded-xl flex items-center justify-center font-bold text-white transition-transform group-hover:scale-110 shadow-md">
+            <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-purple-600 rounded-xl flex items-center justify-center font-bold text-white transition-transform group-hover:scale-110 shadow-md">
               IT
             </div>
             <span className="font-heading font-bold text-xl text-[#111827]">
@@ -50,10 +50,10 @@ export default function Header() {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-[#374151] hover:text-[#0066FF] font-medium transition-colors relative group"
+                className="text-slate-600 hover:text-blue-600 font-medium transition-colors relative group"
               >
                 {link.label}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-[#0066FF] to-[#00B4D8] group-hover:w-full transition-all duration-300"></span>
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-600 to-purple-600 group-hover:w-full transition-all duration-300"></span>
               </a>
             ))}
           </div>
@@ -62,13 +62,13 @@ export default function Header() {
           <div className="hidden lg:flex items-center space-x-4">
             <a
               href="tel:+49731123456"
-              className="flex items-center space-x-2 text-[#374151] hover:text-[#0066FF] transition-colors"
+              className="flex items-center space-x-2 text-slate-600 hover:text-blue-600 transition-colors"
               aria-label="Call us"
             >
               <Phone size={20} />
               <span className="font-medium">+49 731 123456</span>
             </a>
-            <a href="/#contact" className="px-6 py-3 bg-gradient-to-r from-[#0066FF] to-[#00B4D8] text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-300">
+            <a href="/#contact" className="px-6 py-3 bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-300">
               Beratung vereinbaren
             </a>
           </div>
@@ -76,7 +76,7 @@ export default function Header() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="lg:hidden p-2 text-[#111827] hover:text-[#0066FF] transition-colors"
+            className="lg:hidden p-2 text-slate-900 hover:text-blue-600 transition-colors"
             aria-label="Toggle menu"
             aria-expanded={isMobileMenuOpen}
           >
@@ -92,7 +92,7 @@ export default function Header() {
                 <a
                   key={link.href}
                   href={link.href}
-                  className="text-[#374151] hover:text-[#0066FF] font-medium transition-colors py-2"
+                  className="text-slate-600 hover:text-blue-600 font-medium transition-colors py-2"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {link.label}

@@ -40,18 +40,18 @@ const caseStudies: CaseStudy[] = [
 
 export default function CaseStudies() {
   return (
-    <section id="cases" className="py-24 bg-gradient-to-br from-green-50 via-emerald-50 to-teal-50 relative overflow-hidden">
+    <section id="cases" className="py-24 bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50 relative overflow-hidden">
       {/* Background Decoration */}
-      <div className="absolute top-20 left-20 w-96 h-96 bg-gradient-to-br from-green-200/30 to-emerald-200/30 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-20 right-20 w-96 h-96 bg-gradient-to-tl from-teal-200/30 to-cyan-200/30 rounded-full blur-3xl"></div>
+      <div className="absolute top-20 left-20 w-96 h-96 bg-gradient-to-br from-emerald-200/30 to-teal-200/30 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-20 right-20 w-96 h-96 bg-gradient-to-tl from-cyan-200/30 to-teal-200/30 rounded-full blur-3xl"></div>
       
       <div className="container-custom relative z-10">
         <div className="text-center mb-16 space-y-4">
-          <span className="inline-block px-4 py-2 bg-green-100 text-green-600 text-sm font-semibold rounded-full">
+          <span className="inline-block px-4 py-2 bg-emerald-100 text-emerald-700 text-sm font-semibold rounded-full">
             Erfolgsgeschichten
           </span>
           <h2 className="text-4xl lg:text-5xl font-heading font-bold text-[#111827]">
-            <span className="bg-gradient-to-r from-green-600 to-teal-600 bg-clip-text text-transparent">Messbare Erfolge</span> für unsere Kunden
+            <span className="bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">Messbare Erfolge</span> für unsere Kunden
           </h2>
           <p className="text-xl text-[#6B7280] max-w-3xl mx-auto">
             Echte Projekte, echte Ergebnisse – sehen Sie, wie wir Unternehmen transformieren
@@ -68,10 +68,10 @@ export default function CaseStudies() {
             >
               {/* Metric Badge */}
               <div className="flex items-center justify-between">
-                <div className="w-14 h-14 bg-gradient-to-br from-green-500 to-teal-500 rounded-2xl flex items-center justify-center text-white shadow-lg group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
+                <div className="w-14 h-14 bg-gradient-to-br from-emerald-600 to-teal-600 rounded-2xl flex items-center justify-center text-white shadow-lg group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
                   {study.icon}
                 </div>
-                <div className="text-5xl font-bold bg-gradient-to-r from-green-600 to-teal-600 bg-clip-text text-transparent">
+                <div className="text-5xl font-bold bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">
                   {study.metric}
                 </div>
               </div>
